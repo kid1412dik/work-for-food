@@ -1,0 +1,47 @@
+#only{
+    background-color:#375;
+    width:100px;
+    font-size: 16;
+    
+    
+}
+.demo{
+    background-color:#566;
+    width:100px;
+    
+    
+}
+.demo1{
+    background-color: #369;
+    color:#300;
+}
+div{
+    height: 100px;
+    font-weight: bold;
+    /* lighter bolder bold normol */
+}
+*{
+    background-color:#999;
+}
+/* 属性选择器 */
+[id="only"]{
+    border-left-color: #490;
+}
+/* 父子选择器,群选择,从右向左查找*/
+  div span{
+      background-color: #999;
+  }
+/* 直接子元素选择器,精确查找 */
+div > em > span{
+    background-color: #600;
+}
+/* 并列选择器 */
+div.demo{
+    font-style:italic;
+}
+/* 分组选择器 */
+.demo1,
+.demo2{
+    width:100px;
+    height:100px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试</title>
+    <!-- <style type="text/css">
+    div{width:100px;
+    background-color: black;
+    height:100px;
+    }</style> -->
+    <link rel="stylesheet" type="text/css" href="../styles/第二天.css">
+    <!-- 异步加载css文件 -->
+</head>
+<body>
+    <h1>第二天 2019.9.8</h1>
+    <div style="background-color: aqua;height:100px;">
+    优先级:!important>行间样式>id > class|属性 > 标签选择器 > 通配符</div>
+    <div id="only">1.id选择器<br>id是唯一对应的</div>
+    <div class="demo">2.class选择器</div>
+    <div class="demo demo1">class值是多对多的</div>
+    <div class="demo">3.标签选择器</div>
+    <div style="background-color: blueviolet">4.通配符选择器</div>
+    <div class="demo">5.属性选择器</div>
+    <div>!important infinity
+        <br>行间样式 1000
+        <br>id 100
+        <br>class|属性|伪类 10
+        <br>标签|伪元素 1
+        <br>通配符 0
+        <br>256进制
+    </div>
+    <div><span>父子选择器</span></div>
+</body>
+</html>
