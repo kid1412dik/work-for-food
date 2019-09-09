@@ -16,9 +16,10 @@
     color:#300;
 }
 div{
-    height: 100px;
     font-weight: bold;
     /* lighter bolder bold normol */
+    display: inline;
+    /* 但是带有inline的元素都有文字特性 */
 }
 *{
     background-color:#999;
@@ -38,10 +39,36 @@ div > em > span{
 /* 并列选择器 */
 div.demo{
     font-style:italic;
+    border:10px solid #e56;
+    border-left-color:#a23;
+    border-right-color:transparent;
+    
+
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 /* 分组选择器 */
 .demo1,
 .demo2{
     width:100px;
     height:100px;
+}
+.xiye{
+    border: 10px solid #e5e;
+    text-align:middle;/*对其方式*/
+    line-height:30px;
+    /* 行高 */
+    /* 垂直方向单行文本居中方法:行高等于部件高 */
+    text-indent:2em;
+    /* 首行缩进两字符 1em=1 font-size;=16,文字宽等于高*/
+}
+.riji{
+    text-decoration: line-through;
+    /* 下划线:underline 上划线:overline */
+    cursor:pointer;
+    /* 光标指示符 */
+}
+.riji:hover{
+    background-color: #3a5;
+    text-decoration: none;
 }
