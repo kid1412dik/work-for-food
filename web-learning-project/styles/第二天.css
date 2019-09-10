@@ -15,7 +15,7 @@
     background-color: #369;
     color:#300;
 }
-div{
+div {
     font-weight: bold;
     /* lighter bolder bold normol */
     display: inline;
@@ -29,15 +29,15 @@ div{
     border-left-color: #490;
 }
 /* 父子选择器,群选择,从右向左查找*/
-  div span{
+  div span {
       background-color: #999;
   }
 /* 直接子元素选择器,精确查找 */
-div > em > span{
+div > em > span {
     background-color: #600;
 }
 /* 并列选择器 */
-div.demo{
+div.demo {
     font-style:italic;
     border:10px solid #e56;
     border-left-color:#a23;
@@ -49,11 +49,11 @@ div.demo{
 }
 /* 分组选择器 */
 .demo1,
-.demo2{
+.demo2 {
     width:100px;
     height:100px;
 }
-.xiye{
+.xiye {
     border: 10px solid #e5e;
     text-align:middle;/*对其方式*/
     line-height:30px;
@@ -62,13 +62,13 @@ div.demo{
     text-indent:2em;
     /* 首行缩进两字符 1em=1 font-size;=16,文字宽等于高*/
 }
-.riji{
+.riji {
     text-decoration: line-through;
     /* 下划线:underline 上划线:overline */
     cursor:pointer;
     /* 光标指示符 */
 }
-.riji:hover{
+.riji:hover {
     background-color: #3a5;
     text-decoration: none;
 }
