@@ -36,6 +36,7 @@ div {
 div > em > span {
     background-color: #600;
 }
+/* 权重不会继承 */
 /* 并列选择器 */
 div.demo {
     font-style:italic;
