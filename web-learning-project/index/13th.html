@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>13th</title>
+    <style>
+        div  {
+            width: 200px;
+            height: 100px;
+            background: #fff url(../images/xyjy2.jpg) no-repeat;
+            background-size: 100% auto;
+        }
+        aside {
+            width: 100px;
+            height: 50px;
+            background-color: #21f;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* 去除内外边距 */
+        /* 尽量不要给行内元素指定上下的内外边距就好了 */
+        div:first-child {
+            margin-bottom: 100px
+        }
+        div:last-child {
+            margin-top: 50px;
+        }
+        .father {
+            width: 200px;
+            height: 200px;
+            margin-top: 100px;
+            border: 10px solid red;
+        }
+        /* 空间尺寸:w+b+p+m */
+        /* 内盒实际尺寸: w+b+p */
+        /* padding不影响盒子大小的情况
+        1.没有给定宽高 2.继承了父亲的宽高
+         */
+        .son {
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="text">
+        <aside>
+                123
+            </aside>
+   </div>
+   <div>
+       外边距会合并 垂直的块级盒子
+   </div>
+   <div></div>
+   <div class="father">
+        外边距塌陷解决方法
+       <div class="son">
+           1.父级加边框<br>
+           2.父级加内边距<br>
+           3.overflow: hiden;
+       </div>
+   </div>
+
+    
+</body>
+</html>
