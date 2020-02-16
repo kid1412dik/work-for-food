@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 app.use(router)
-
+app.set('host','47.115.6.161');
 app.listen(3000,function(){
     console.log('running...')
 })
