@@ -1,16 +1,16 @@
 <template>
 <div class="nav-bar">
 
-    <div class="left">
-        <slot></slot>
+    <div class= "left">
+        <slot name= "left"></slot>
     </div>
 
-    <div class="mid">
-        <slot></slot>
+    <div class= "mid">
+        <slot name= "mid"></slot>
     </div>
 
-    <div class="right">
-        <slot></slot>
+    <div class= "right">
+        <slot name= "right"></slot>
     </div>
 </div>
 </template>
@@ -24,17 +24,17 @@ export default {
 <style scoped>
     .nav-bar {
         display: flex;
-        line-height: 44px;
-        height: 44px;
+        line-height: 40px;
+        height: 40px;
         box-shadow: 0 1px 1px rgba(100,100,100,.1);
         text-align: center;
     }
     .left, .right{
         width: 60px;
-        background-color: #f00;
+        
     }
     .mid {
         flex: 1;
-        background-color: #f0f;
+        
     }
 </style>
